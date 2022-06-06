@@ -1,0 +1,30 @@
+.content{
+  flex: 1;
+  background-color: black;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 64;
+ }
+
+ .letters{
+   color: whitesmoke;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ p1{
+   font-size: 12;
+ }
+ input{
+   width: 256;
+   height: 32;
+ }
+
+ button{
+  width: 256;
+  height: 32;
+  background: purple;
+  color: whitesmoke;
+  border-radius: 8px;
+ }
