@@ -1,0 +1,61 @@
+/* --------------------------- VARIABLES --------------------------- */
+
+:root {
+
+  --text-hue: 254;
+  --highlight-hue: 311;
+
+  --background-color: hsl(250, 100%, 4%);
+  --text-color: hsl(var(--text-hue), 100%, 82%);
+  --highlight-color: hsl(var(--highlight-hue), 92%, 45%);
+  --highlight-color-light: hsl(var(--highlight-hue), 92%, 65%);
+
+}
+
+
+/* --------------------------- BASE --------------------------- */
+
+.content {
+  flex: 1;
+  background: var(--background-color);
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.text {
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p1 {
+  font-size: 1rem;
+}
+
+p1 span {
+  font-style: italic;
+  font-weight: bold;
+  color: var(--highlight-color);
+}
+
+input {
+  width: 16rem;
+  height: 2rem;
+  text-align: center;
+}
+
+button {
+  width: 16rem;
+  height: 2rem;
+  margin-top: 0.75rem;
+  background: var(--highlight-color);
+  color: var(--text-color);
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: var(--highlight-color-light);
+}
