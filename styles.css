@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none
+}
+
 /* --------------------------- VARIABLES --------------------------- */
 
 :root {
@@ -7,6 +13,7 @@
 
   --background-color: hsl(250, 100%, 4%);
   --text-color: hsl(var(--text-hue), 100%, 82%);
+  --text-color-light: hsl(var(--text-hue), 100%, 100%);
   --highlight-color: hsl(var(--highlight-hue), 92%, 45%);
   --highlight-color-light: hsl(var(--highlight-hue), 92%, 65%);
 
@@ -15,47 +22,75 @@
 
 /* --------------------------- BASE --------------------------- */
 
-.content {
-  flex: 1;
-  background: var(--background-color);
-  text-align: center;
-  margin-top: 8rem;
-}
-
 .text {
   color: var(--text-color);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  font-family: sans-serif;
 }
+
+.content {
+  width: 80%;
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: 8rem;
+
+}
+
+img {
+  width: 8rem;
+  height: 10rem;
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--background-color);
+  text-align: center;
+}
+
 
 h1 {
   font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
 }
 
 p1 {
-  font-size: 1rem;
+  font-size: .80rem;
+  opacity: 0.7;
 }
 
 p1 span {
   font-style: italic;
-  font-weight: bold;
   color: var(--highlight-color);
 }
 
 input {
-  width: 16rem;
-  height: 2rem;
   text-align: center;
+  margin-bottom: 0.75rem;
 }
 
 button {
-  width: 16rem;
-  height: 2rem;
-  margin-top: 0.75rem;
   background: var(--highlight-color);
-  color: var(--text-color);
+  color: var(--text-color-light);
+  transition: 0.2s;
+}
+
+button, input {
+  width: 75%;
+  height: 2rem;
   border-radius: 8px;
 }
 
 button:hover {
   background-color: var(--highlight-color-light);
+  cursor: pointer;
+}
+
+#answer {
+  margin-top: 0.7rem;
+  transition: opacity 1s;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: normal;
 }

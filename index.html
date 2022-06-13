@@ -2,24 +2,30 @@
 <html>
 
 <head>
+  <title>Arataka Reigen Responde</title>
   <script type="text/javascript" src="./index.js" defer=""></script>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="content">
-  <div class="image">
-    <img
-    src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg"
-    alt="Imagem de uma bola de cristal">
-  </div>
-    <div class="text">
-      <h1>Vou revelar seu destino!</h1>
-      <p1>Clique em <span>fazer pergunta</span> para que seu
-        destino
-        seja revelado.</p1>
+<body>
+  <div class="content">
+    <div class="image">
+      <img
+      src="https://cdn.myanimelist.net/images/characters/16/308364.jpg"
+      alt="Imagem de Arataka Reigen, um paranormal famoso">
     </div>
-  <input type="text" placeholder="Digite sua pergunta" />
-  <br>
-  <button>Fazer pergunta</button>
+      <div class="text">
+        <h1>Eu, Arataka Reigen, vou revelar seu destino!</h1>
+        <p1>Clique em <span>fazer pergunta</span> para que seu
+          destino
+          seja revelado.</p1>
+      </div>
+      <div>
+        <input id="question" type="text" placeholder="Digite sua pergunta" />
+        <button onclick="questionMade()">Fazer pergunta</button>
+      </div>
+      <h2 id="answer" class="text">
+      </h2>
+  </div>
 </body>
 </html>
