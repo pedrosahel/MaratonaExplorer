@@ -26,18 +26,21 @@ const noQuestions = [
 
 const answerElement = document.querySelector("#answer")
 const questionElement = document.querySelector("#question")
-const questionButton = document.querySelector("#questioButton")
+const timer = 2000; 
 
 let previousQuestion
+
+let timeout;
 
 function questionMade() {
 
     answerElement.style.opacity = 1;
 
+    clearTimeout(timeout);
+
     if(questionElement.value == previousQuestion)
     {
-        resetQuestion();
-        questionButton.setAttribute('disabled');
+        resetAnswer();
         return;
     }
 
@@ -45,7 +48,7 @@ function questionMade() {
 
     if(questionElement.value != "")
     {
-        answerDisplay(answers);   
+        answerDisplay(answers);
     }
     else
     {
@@ -58,15 +61,11 @@ function answerDisplay(myStringArray) {
     const randomNumber = Math.floor(Math.random() * myStringArray.length);
     answerElement.innerHTML = "<div>" + myStringArray[randomNumber] + "</div";
 
-    resetQuestion();
+    resetAnswer();
 }
 
-function resetQuestion() {
-    setTimeout(function(){
-        answerElement.style.opacity = 0; clearQuestion();
-    }, 3000)
-}
-
-function clearQuestion() {
-    questionElement.value = "";
+function resetAnswer() {
+    timeout = setTimeout(function(){
+        answerElement.style.opacity = 0;
+    }, timer);
 }
