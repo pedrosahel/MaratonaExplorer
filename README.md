@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Imagem do personagem Arataka Reigen, do anime Mob Psycho" title="Arataka Reigen Responde" src="https://cdn.myanimelist.net/images/characters/16/308364.jpg" width="220px" height="220px" />
+    <img alt="Imagem do personagem Arataka Reigen, do anime Mob Psycho" title="Arataka Reigen Responde" src="https://raw.githubusercontent.com/pedrosahel/MaratonaExplorer/main/arataka.png" width="886px" height="585px" />
 </h1>
 
 <p align="center">
